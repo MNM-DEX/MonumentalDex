@@ -1,4 +1,3 @@
-// src/App.jsx
 import { useState } from "react";
 import SwapBox from "./components/SwapBox";
 import LiquidityBox from "./components/LiquidityBox";
@@ -11,18 +10,17 @@ function App() {
   return (
     <div
       style={{
-        maxWidth: 900,
+        maxWidth: "100%",
         margin: "0 auto",
-        padding: "120px 24px 24px", // top padding for fixed navbar
+        padding: "110px 16px 24px",
         color: "#fff",
         background: "#050816",
-        minHeight: "100vh"
+        minHeight: "100vh",
+        boxSizing: "border-box"
       }}
     >
-      {/* Fixed Navbar */}
       <Navbar currentTab={tab} setTab={setTab} />
 
-      {/* Page Modules */}
       {tab === "swap" && <SwapBox />}
       {tab === "liquidity" && <LiquidityBox />}
       {tab === "staking" && <StakingDashboard />}

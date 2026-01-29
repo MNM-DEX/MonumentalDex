@@ -15,7 +15,7 @@ export function getProvider() {
 // 2. NOVA network configuration
 // -------------------------------
 export const NOVA_PARAMS = {
-  chainId: "0x1dbf5", // 121525 in hex
+  chainId: "0x1dab5", // 121525 in hex
   chainName: "Ethernova",
   nativeCurrency: {
     name: "NOVA",
